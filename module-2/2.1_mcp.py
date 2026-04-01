@@ -36,7 +36,7 @@ async def main():
 
     config = {"configurable": {"thread_id": "1"}}
 
-    response = agent.invoke(
+    response = agent.ainvoke(
         {"messages": [HumanMessage(content="Tell me about the langchain-mcp-adapters library")]},
         config=config
     )
